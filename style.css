@@ -1,0 +1,137 @@
+body{
+    display: grid;
+    grid-template-areas:
+                        "nav"
+                        "header"
+                        "icones"
+                        "video"
+                        "perfil"
+                        "footer";
+    grid-template-columns: 99.8vw;
+    grid-template-rows: 2vh 60vh 50vh 50vh 60vh 20vh;
+    margin: 0vw;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #008000;
+
+}
+
+header{
+    grid-area: header;
+    background-image: url(img/banner.png);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .mao img{
+     display: flex;
+     align-items: flex-end;
+     margin-left: 230px;
+     margin-top: 92px;
+     width: 200px;
+     height: 250px;
+} 
+.tex-ico{
+    text-align: center;
+}
+
+/* SECTION ICONES */
+
+.icones{
+    grid-area: icones;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ico-hea img{ 
+    background-color: #008000;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+/* SECTION VIDEO */
+.video{
+    grid-area: video;
+    background-color:  #e3e3e3 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-direction: column; */
+}
+.email{
+    background-color: green;
+    border-radius: 15%;
+    display: flex;
+}
+.video-tex{
+    display: grid;
+    justify-items: center;
+}
+
+/* SECTION PERFIL*/
+
+.perfil{
+    grid-area:perfil;
+    background-color: white;;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER*/
+footer{
+    align-items: center;
+    background-color:#e3e3e3;
+    display: flex;
+    grid-area: footer;
+    justify-content: space-around;
+    
+}
+@media (max-width: 425px) {
+    grid {
+        grid-template-areas:
+            'nav'
+            'header'
+            'icones'
+            'video'
+            'perfil'
+            'footer';
+    }
+}
+@media screen and (max-width:400px){
+    header{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 400px){
+    .tex-ico{
+        /* width: 10px; */
+    }
+}
+@media screen and (max-width: 400px) {
+    .icones{
+        width:100%;
+        background-color: red;
+        flex-direction: column;
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 400px){
+    .container {
+        width:100%;
+        margin: 0 auto;
+        background-color: aqua;
+     }   
+}
+@media screen and (max-width: 400px){
+    .body{
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.5; 
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
